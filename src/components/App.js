@@ -1,4 +1,5 @@
 import React from "react";
+import Timer from "./Timer";
 import Footer from "./Footer";
 import Movie from "./Movie";
 import PageHeading from "./PageHeading";
@@ -25,6 +26,7 @@ function createList(movie) {
 export default function App() {
   return (
     <div>
+      <Timer/>
       <PageHeading />
       {movies.map(createList)}
       {movies.map(createMovie)}
